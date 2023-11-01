@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>P</span>RATHAMESH</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark ham" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars ham" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span class="auto-input"></span></p>
+                <h1>Hi, I'm <span>Prathamesh</span><br> Vattamwar from Pune</h1>
+                <a href="Prathamesh Vattamwar.pdf" download="" class="btn btn2 header-btn">Download CV</a>
+                <a href="#contact" class="btn btn2 header-btn">Contact me</a>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------- About --------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="about.jpg">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="description">"Hello, I'm Prathamesh. I initially delved into backend development, mastering core Java, Servlets, and JDBC. However, my passion truly ignited in 2023 when I embraced frontend development. I'm deeply dedicated to creating captivating web experiences with HTML, CSS, JavaScript, and React JS. Let's connect and make your web ideas a reality!"</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web app interfaces</li>
+                            <li><span>Web Developmnet</span><br>Web app development</li>
+                            <li><span>Backend development</span><br>Server side web development</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Full Stack Web Development 2022-2023</span><br>at Giri's Tech Hub</li>
+                            <li><span>Currently</span><br>I'm a fresher</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BTech &lbbrk;ENCT&rbbrk; 2019-2022</span><br>SVERI's COE, Pandharpur</li>
+                            <li><span>Diploma &lbbrk;ENCT&rbbrk; 2016-2019</span><br>SVERI's COE (Poly), Pandharpur</li>
+                            <li><span>SSC &lbbrk;Semi-English&rbbrk; 2015-2016</span><br>Shantiniketan Gurukul, Pandharpur</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------ Projects ------------------------- -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-clipboard-list"></i> 
+                    <h2>TODO List using React JS</h2>
+                    <p>Task management app using React JS for organization.</p>
+                    <a href="https://prathameshvattamwar.github.io/toDoList/" target="_blank">Website ></a>
+                    &emsp;
+                    <a href="https://github.com/prathameshvattamwar/toDoList" target="_blank">Source code</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Personal Portfolio</h2>
+                    <p>Designed personal portfolio with the help of HTML, CSS, JavaScript</p>
+                    <a href="https://prathameshvattamwar.github.io/portfolio" target="_blank">Website ></a>
+                    &emsp;
+                    <a href="https://github.com/prathameshvattamwar/portfolio" target="_blank">Source code</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <h2>Instagram Clone App</h2>
+                    <p>Designed Instagram-like interface with HTML, CSS, and JavaScript.</p>
+                    <a href="https://prathameshvattamwar.github.io/Instagram/" target="_blank">Website ></a>
+                    &emsp;
+                    <a href="https://github.com/prathameshvattamwar/Instagram" target="_blank">Source code</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-calculator"></i>
+                    <h2>Calculator</h2>
+                    <p>Designed to perform basic arithmetic operations with HTML, CSS, and JavaScript</p>
+                    <a href="https://prathameshvattamwar.github.io/Calculator/" target="_blank">Website ></a>
+                    &emsp;
+                    <a href="https://github.com/prathameshvattamwar/Calculator" target="_blank">Source code</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>CRUD Operations</h2>
+                    <p>Developed dynamic web app with Java, JDBC, Servlets, HTML, CSS, and MySQL.</p>
+                    <a href="#project" onclick="alert('uploaded soon...')">Website ></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-house-laptop"></i>
+                    <h2>Home Automation <br> using IoT + AR</h2>
+                    <p>Awarded Second International Prize at PICT College, Pune. Expertise in IoT and AR.</p>
+                    <a href="https://www.instagram.com/reel/CfQiTZGDWwn/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">Project Video ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------ Achievements ------------------------ -->
+    <div id="achievements">
+        <div class="container">
+            <h1 class="sub-title">Achievements</h1>
+            <div class="achievement-list">
+                <div class="achievement">
+                    <img src="Java Full Stack Certificate.PNG" alt="Java Full Stack Development Certificate">
+                    <div class="layer">
+                        <h3>Java Full Stack Development Certification</h3>
+                        <p>Certified for proficiency in Java Full Stack Technology</p>
+                        <!-- <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="achievement">
+                    <img src="freeCodeCamp Certificate.PNG" alt="">
+                    <div class="layer">
+                        <h3>Responsive Web Development Certification</h3>
+                        <p>Certified for proficiency in creating responsive web designs and user interfaces.</p>
+                        <!-- <a href="https://www.freecodecamp.org/certification/prathamesh_vattamwar/responsive-web-design" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="achievement">
+                 <!-- <img src="images/sveri.jpeg" alt=""> -->
+                    <img src="achvment.jpg" alt="">
+                    <div class="layer">
+                        <h3>Second International Prize</h3>
+                        <p>Awarded for "Home Automation using IoT + AR" project showcasing expertise in IoT and Augmented Reality.</p>
+                        <!-- <a href="https://drive.google.com/drive/folders/1lxGkxFF1qzmyG5GJ8QZwmnVBKjXukvde?usp=sharing" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+                <div class="achievement">
+                    <img src="campus.PNG" alt="">
+                    <div class="layer">
+                        <h3>Campus Ambassador</h3>
+                        <p>Xenia competetion Campus Ambassador at PICT college, Pune.</p>
+                        <!-- <a href="https://drive.google.com/file/d/1pr2cgy5yT9OWSkj0molLA_vCp-NGQQnM/view?usp=sharing" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <a href="#achievements" class="btn" onclick="alert('updated soon...')">See more</a>
+        </div>
+    </div>
+    <!-- ----------------- Contact ----------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title contact-me">Contact me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> prathamesh.vattamwar24@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile-screen-button"></i> +91 9271981229</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/prathamesh-vattamwar-483529227/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/prathameshvattamwar" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/prathameshpv24/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/prathameshv24" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    </div>
+                    <a href="Prathamesh Vattamwar.pdf" download="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" autocomplete="off" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6" style="resize: none;"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Prathamesh Vattamwar. <i class="fa-solid fa-heart"></i> Portfolio 2023</p>
+        </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzg2YV1iG2IRROZ2l2XwwMljpgj32mYafAUwGIuXfy1aQoXWzwCFBqqqkB8GfWxAS-t/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+    
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
+    <!-- Auto Type writing -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-input",{
+            strings : ["Java Full Stack Web Developer","Frontend Developer","Backend Developer"],
+            typeSpeed:40,
+            backSpeed:20,
+            loop:true
+        })
+    </script>   
+
+    <script src="https://kit.fontawesome.com/37df75b44e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- https://script.google.com/macros/s/AKfycbzg2YV1iG2IRROZ2l2XwwMljpgj32mYafAUwGIuXfy1aQoXWzwCFBqqqkB8GfWxAS-t/exec -->
