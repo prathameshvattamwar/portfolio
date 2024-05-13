@@ -486,4 +486,10 @@ nav .ham{
     .copyright{
         font-size: 12px;
     }
+
+    /* Archievements */
+    .achievement-list{
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+    }
+
 }
