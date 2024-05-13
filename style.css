@@ -263,6 +263,7 @@ nav ul li a:hover::after{
     width: 100%;
     border-radius: 10px;
     display: block;
+    aspect-ratio: 1.4;
     transition: transform .5s;
 }
 
