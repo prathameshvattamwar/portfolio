@@ -1262,3 +1262,22 @@ footer {
         margin-right: 15px;
     }
 }
+
+.form-message {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+.form-message .sending {
+    color: #0057b3;
+}
+
+.form-message .success {
+    color: #28a745;
+}
+
+.form-message .error {
+    color: #dc3545;
+}
