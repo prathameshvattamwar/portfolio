@@ -277,12 +277,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === '#' + current) {
-                link.classList.add('active');
-            }
-        });
+        // navLinks.forEach(link => {
+        //     link.classList.remove('active');
+        //     if (link.getAttribute('href') === '#' + current) {
+        //         link.classList.add('active');
+        //     }
+        // });
     });
 
     // Scroll to section when clicking on navigation links
