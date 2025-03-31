@@ -331,7 +331,7 @@
                             <span>CSS</span>
                             <span>JavaScript</span>
                         </div>
-                        <h3>Smart Recipe Manager</h3>
+                        <h3>Calculator</h3>
                         <p>Recipe Manager with advance features like card, ingredients, etc.</p>
                         <div class="project-links">
                             <a href="https://prathameshvattamwar.github.io/recipe_manager" class="project-link" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
@@ -559,5 +559,36 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Replace with your web app URL from step 3
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzVG6bALCqiDndjatZ8JELv2cSfd3UDKHVgC0fexAEzs5ELmxVnr5wpJk4tpFJmppHDdQ/exec';
+        
+        // Create URL with parameters
+        const url = `${scriptURL}?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`;
+        
+        // Send data to Google Sheet
+        fetch(url, { method: 'POST', mode: 'no-cors' })
+            .then(response => {
+                // Clear form
+                document.getElementById('contactForm').reset();
+                
+                // Show success message
+                alert('Thank you! Your message has been submitted.');
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Oops! Something went wrong.');
+            });
+    });
+    </script>
 </body>
 </html>
