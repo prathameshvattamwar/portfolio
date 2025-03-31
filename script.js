@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Form submission would typically go here with AJAX
-            alert('Thanks for your message! I will get back to you soon.');
+            // alert('Thanks for your message! I will get back to you soon.');
             
             // Reset form
             contactForm.reset();
